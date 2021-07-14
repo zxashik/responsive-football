@@ -1,0 +1,126 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+/* common styles  */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ------------------------------------------------------
+--------------------------------------------------------
+
+        Header section
+
+------------------------------------------------------
+--------------------------------------------------------
+
+*/
+
+ .header-container{
+    background-color: #2D25A0;
+ }
+ header{
+     
+     display: flex;
+     height: 677px;
+ }
+ 
+ .left-width{
+    width: 485px;
+    height: 230px;
+    margin-left: 156px;
+    margin-right: 52px;
+    margin-top: 207px;
+ }
+.heading h1{
+    font-size: 64px;
+    color: white;
+}
+.top-btn{
+background-color:  #E02C6D;
+padding: 10px 24px;
+font-size: 16px;
+color: white;
+width: 168px;
+height: 44px;
+font-weight: 500;
+}
+.top-btn:hover {
+background: #f72773;
+}
+.watch-button{
+color: white;
+text-decoration: none;
+padding-right: 8px;
+}
+.right-width{
+width: 567px;
+height: 427px;
+margin-right: 130px;
+margin-top: 153px;
+}
+.right-width img{
+width: 556px;
+height: 438px; 
+}
+
+
+  /* -----------------------------
+  
+  players sections 
+
+  ------------------------------------*/
+
+
+.player-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 70px 205px 70px 0;
+}
+ 
+.players{
+    width: 870px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+}
+.player{
+    display: flex;
+    width: 330px;
+    box-sizing: border-box;
+    /* box-shadow: 1px 1px 3px #6C6C6C; */
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player-full{
+    padding: 15px;
+}
+.player-img{
+    width: 300px;
+    height: 256px;
+}
+.player-info{
+    padding: 5px;
+}
+.player-name span{
+    font-size: 28px;
+    font-weight: 700;
+}
+.player-detail{
+    text-align: justify;
+}
+.player-detail p{
+    font-size: 16px;
+    color: #6C6C6C;
+}
