@@ -44,7 +44,25 @@ body{
 .heading h1{
     font-size: 64px;
     color: white;
+    position: relative;
+    animation-name: out;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    
 }
+@keyframes out {
+    0%   {
+        transform: translateX(0) ;
+    }
+    50% {
+        transform: translateY(20%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+  }
+
 .top-btn{
 background-color:  #E02C6D;
 padding: 10px 24px;
@@ -53,9 +71,21 @@ color: white;
 width: 168px;
 height: 44px;
 font-weight: 500;
+position: relative;
+animation-name: inside;
+animation-duration: 2s;
+animation-timing-function: ease-in-out;
 }
+@keyframes inside {
+    0%   {
+        left:100%;}
+    /* 50%  { 
+        left:100%;} */
+    100% {
+        left:0px;}
+  }
 .top-btn:hover {
-background: #f72773;
+background: #8a0737;
 }
 .watch-button{
 color: white;
@@ -71,8 +101,14 @@ margin-top: 153px;
 .right-width img{
 width: 556px;
 height: 438px; 
+cursor: pointer;
+transition: width 1s, height 1s ;
 }
 
+.right-width img:hover{
+    width: 600px;
+    height: 500px;
+}
 
   /* -----------------------------
   
