@@ -155,6 +155,85 @@ body{
     color: #6C6C6C;
 }
 
+/* -------------------------
+
+    gallery section
+
+------------------------*/
+.galleries{
+    margin-top: 20px;
+    margin-bottom: 10%;
+
+}
+.galleries h1{
+    font-size: 3rem;
+    font-family: fantasy;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+.p-img{
+    width: 100%;
+    border-radius: 5px;
+}
+.p-img:hover{
+    transform: scale(2,2);
+    transition: .5s transform;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.g-img{
+    padding: 10px;
+    overflow: hidden;
+}
+
+
+/* -------------------------
+
+highlight section
+
+------------------------ */
+.video-container h1{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+.video{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-row-gap: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.highlight{
+    width: 300px;
+    margin: 10px;
+    box-sizing: border-box;
+
+    background-color: #1e1e1e
+}
+.highlight-image{
+    width: 100%;
+    opacity: .8;
+}
+.highlight-title{
+    padding: 30px 15px;
+}
+.highlight-title a{
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    color: whitesmoke;
+}
+
+
+
 
 /* -------------------------
 
@@ -167,6 +246,7 @@ footer{
     grid-template-columns: 484px;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
     margin-bottom: 63px;
 }
 .footer-info img{
@@ -209,42 +289,6 @@ footer{
 .fa-youtube:hover{
     background-color: #FF0000;
     color: white;
-}
-
-/* -------------------------
-
-    gallery section
-
-------------------------*/
-.galleries{
-    margin-top: 20px;
-    margin-bottom: 10%;
-    background-color: rgba(105, 105, 105, 0.103);
-
-}
-.galleries h1{
-    font-size: 3rem;
-    font-family: fantasy;
-    font-weight: 800;
-    text-align: center;
-    padding-bottom: 50px;
-}
-.gallery{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-}
-.p-img{
-    width: 100%;
-    border-radius: 5px;
-}
-.p-img:hover{
-    transform: scale(2,2);
-    transition: .5s transform;
-    border-radius: 5px;
-}
-.g-img{
-    padding: 10px;
-    overflow: hidden;
 }
 
 
@@ -303,6 +347,9 @@ footer{
 
     footer{
         margin-bottom: 160px;
+    }
+    .video{
+        flex-direction: column;
     }
    
     
