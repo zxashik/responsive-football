@@ -219,6 +219,7 @@ footer{
 .galleries{
     margin-top: 20px;
     margin-bottom: 10%;
+    background-color: rgba(105, 105, 105, 0.103);
 
 }
 .galleries h1{
